@@ -37,13 +37,9 @@ print_modname() {
   ui_print " $MODNAME "
   ui_print "$pounds"
   ui_print "*******************************"
-  ui_print "Magisk模块安全倡议：       "
-  ui_print "不要随意使用来历不明的模块 "
-  ui_print "尽量使用公开源代码的模块   "
-  ui_print "刷机有风险"
-  ui_print "数据常备份"
-  ui_print " "
-  ui_print " 作者 tg@mdogwoop"
+  ui_print "MiPushMagisk"
+  ui_print "Version:0.3.7.20210106.1425051"
+  ui_print "by mdogwoop"
   ui_print "*******************************"
 }
 
