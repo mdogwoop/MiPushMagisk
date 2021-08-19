@@ -175,5 +175,7 @@ cd /
 $BOOTMODE || recovery_cleanup
 rm -rf $TMPDIR
 
+ui_print "- 去Github点个star呗：https://github.com/mdogwoop/MiPushMagisk"
+
 ui_print "- Done"
 exit 0
