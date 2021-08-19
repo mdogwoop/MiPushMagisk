@@ -31,13 +31,9 @@
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "Magisk模块安全倡议：       "
-  ui_print "不要随意使用来历不明的模块 "
-  ui_print "尽量使用公开源代码的模块   "
-  ui_print "刷机有风险"
-  ui_print "数据常备份"
-  ui_print " "
-  ui_print " 作者 tg@mdogwoop"
+  ui_print "MiPushMagisk"
+  ui_print "Version:0.3.7.20210106.1425051"
+  ui_print "by mdogwoop"
   ui_print "*******************************"
 }
 
@@ -71,7 +67,7 @@ REPLACE="
 ##########################################################################################
 #释放文件，普通shell命令
 on_install() {
-  ui_print "- 正在释放文件"
+  ui_print "- Releasing file"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
 }
 
@@ -108,14 +104,14 @@ set_permissions() {
 
 CommonPath=$MODPATH/common
 if [ ! -d ${CommonPath} ];then
-  ui_print "模块高级设置不需要修复!"
+  ui_print "Advanced settings do not need to be repaired!"
   
 elif [ "`ls -A ${CommonPath}`" = "" ];then
-    ui_print "模块高级设置为空!"
+    ui_print "Advanced settings are empty!"
     rm  -rf  ${CommonPath}
 else
 
-  ui_print "- 正在进行模块高级设置"
+  ui_print "- Advanced module design in progress"
   mv  ${CommonPath}/*  $MODPATH
   rm  -rf ${CommonPath}
 
