@@ -9,4 +9,4 @@ A Magisk module to install MiPushFramework to the system partition
 
 Based on [MiPushFramework](https://github.com/MiPushFramework/MiPushFramework/)
 
-This software is distributed under GPL v3 [gplv3-with-text-136x68.png](https://www.gnu.org/licenses/gpl-3.0.html)
+This software is distributed under GPL v3 [![gplv3](gplv3-with-text-136x68.png)](https://www.gnu.org/licenses/gpl-3.0.html)
